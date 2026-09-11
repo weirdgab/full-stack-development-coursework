@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Cabeçalho</title>
+	</head>
+	<body>
+		<h1>Aula Prática</h1>
+		<p>Clique para carregar imagens aleatórias:</p>
+		<img id="img_dog" src="" alt="Aguardando a imagem ser carregada..." />
+		<button onclick="carregarImagens()">Carregar imagens</button>
+	</body>
+	<script type="text/javascript">
+		function carregarImagens() {
+			var url = 'https://dog.ceo/api/breeds/image/random';
+			fetch(url, {
+				method: 'get',
+			})
+				.then(function (response) {
+					response.json().then(function (data) {
+						console.log('Resultado da requisição: ' + data.message);
+						var imgDog = document.getElementById('img_dog');
+						imgDog.src = data.message;
+					});
+				})
+				.catch(function (err) {
+					console.eror('O seguinte erro ocorreu durante a requisição: ' + err);
+				});
+		}
+	</script>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Especificidade</title>
+        <style type="text/css">
+            p {
+                color: blue !important;
+            }
+            div p {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Texto solto na div
+            <p>Texto do parágrafo que é "filho" da div</p>
+        </div>
+    </body>
+</html>

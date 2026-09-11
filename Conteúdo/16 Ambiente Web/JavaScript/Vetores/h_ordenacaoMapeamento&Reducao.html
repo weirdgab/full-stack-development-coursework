@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ordenação, Mapeamento e Redução</title>
+	</head>
+	<body>
+		<button onclick="executar()">Clique Aqui</button>
+		<script>
+			executar = () => {
+				const valores = [1, 6, 5, 9, 2];
+				valores.sort();
+				console.log(valores);
+				console.log(`Valor na posição 3: ${valores[3]}`);
+				valores.forEach((element, index) => console.log(`Valor[${index}]: ${element}`));
+				const somaDobro = valores.map((e) => e * 2).reduce((a, b) => a + b);
+				console.log('Soma 2x = ' + somaDobro);
+			};
+		</script>
+	</body>
+</html>

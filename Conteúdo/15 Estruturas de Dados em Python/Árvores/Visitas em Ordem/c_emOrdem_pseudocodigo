@@ -1,0 +1,8 @@
+função simétrica(registro no * p)
+início
+    se(p->dir != NULO)
+        simétrica(p->dir);
+    visita(p);
+    se(p->esq != NULO)
+        simétrica(p->dir);
+fim

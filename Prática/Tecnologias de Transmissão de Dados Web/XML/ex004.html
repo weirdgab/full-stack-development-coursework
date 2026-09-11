@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	</head>
+	<body>
+		<table id="container"></table>
+	</body>
+	<script type="text/javascript">
+		window.onload = (event) => {
+			loadXmlDoc();
+		};
+
+		function loadXmlDoc() {
+			fetch('cd_catalog.xml', { method: 'GET' })
+				.then((response) => response.text())
+				.then((data) => {
+					const parser = new DOMParser();
+					const xml = parser.parseFromString(data, 'application/xml');
+					let table = '<tr><th>Title</th><th>Artist</th></tr>';
+					let x = xml.getElementsByTagName('CD');
+					for (i = 0; i < x.length; i++) {
+						table +=
+							'<tr><td>' +
+							x[i].getElementsByTagName('TITLE')[0].childNodes[0].nodeValue +
+							'</td><td>' +
+							x[i].getElementsByTagName('ARTIST')[0].childNodes[0].nodeValue +
+							'</td></tr>';
+					}
+					document.getElementsById('container').innerHTML = table;
+				})
+				.catch((err) => console.error('error:', err));
+		}
+	</script>
+</html>

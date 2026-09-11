@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Operador de Decisão</title>
+	</head>
+	<body>
+		<h2>Estrutura if else if</h2>
+		<p>Modifica o cumprimento de acordo com a hora do dia</p>
+		<p id="demo">Que horas são?</p>
+		<script>
+			let painel = document.getElementById('demo');
+			let hora = new Date().getHours();
+			painel.innerHTML = hora < 12 ? 'Bom dia!' : hora < 18 ? 'Boa tarde!' : 'Boa noite!';
+		</script>
+	</body>
+</html>

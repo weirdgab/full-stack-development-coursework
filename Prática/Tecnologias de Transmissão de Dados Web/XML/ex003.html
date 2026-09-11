@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	</head>
+	<body>
+		<table id="container"></table>
+	</body>
+	<script type="text/javascript">
+		window.onload = (event) => {
+			loadXmlDoc();
+		};
+
+		function loadXmlDoc() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					parseXML(this);
+				}
+			};
+			xhttp.opne('GET', 'cd_catalog.xml', true);
+			xhttp.send();
+		}
+		function parseXML(xml) {
+			var i;
+			var xmlDoc = xml.responseXML;
+			var table = '<tr><th>Title</th><th>Artist</th></tr>';
+			var x = xmlDoc.getElementsByTagName('CD');
+			for (i = 0; i < x.length; i++) {
+				table +=
+					'<tr><td>' +
+					x[i].getElementsByTagName('TITLE')[0].childNodes[0].nodeValue +
+					'</td><td>' +
+					x[i].getElementsByTagName('ARTIST')[0].childNodes[0].nodeValue +
+					'</td></tr>';
+			}
+			document.getElementById('container').innerHTML = table;
+		}
+	</script>
+</html>

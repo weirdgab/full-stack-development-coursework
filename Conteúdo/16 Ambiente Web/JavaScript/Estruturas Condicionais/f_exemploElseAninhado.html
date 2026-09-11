@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Estrutura Else Aninhada</title>
+	</head>
+	<body>
+		<h2>Estrutura If Else if</h2>
+		<p>Modifica o cumprimento de acordo com a hora do dia</p>
+		<p id="demo">Que horas são?</p>
+		<script>
+			let painel = document.getElementById('demo');
+			let hora = new Date().getHours();
+			if (hora < 12) {
+				painel.innerHTML = 'Bom dia!';
+			} else if (hora < 18) {
+				painel.innerHTML = 'Boa tarde';
+			} else {
+				painel.innerHTML = 'Boa noite!';
+			}
+		</script>
+	</body>
+</html>

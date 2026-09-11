@@ -1,0 +1,82 @@
+p {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-right: 6px;
+    margin-left: 4px;
+}
+
+/*
+Abreviação:
+p {
+    margin: 10px 6px 8px 4px;
+}
+*/
+
+p {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-right: 6px;
+    padding-left: 4px;
+}
+
+/*
+Abreviação:
+p {
+    padding: 10px 6px 8px 4px;
+}
+*/
+
+p {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #cccccc;
+}
+
+/*
+Abreviação:
+p {
+    border: 2px solid #cccccc;
+}
+*/
+
+p {
+    background-color: #000000;
+    background-image: url(imagem.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+/*
+Abreviação:
+p {
+    background: #000000 url(imagem.jpg) no-repeat top left
+}
+*/
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-style: italiz;
+    font-family: verdana;
+}
+
+/*
+Abreviação:
+p {
+    1em/1.5em bold italic verdana;
+}
+*/
+
+ul {
+    list-style: #000000;
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: url(imagem.jpg);
+}
+
+/*
+ul {
+    list-style: disc outside url(imagem.jpg);
+}
+*/

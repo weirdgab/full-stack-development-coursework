@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Eventos</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"></script>
+	</head>
+	<body>
+		<h1>Título</h1>
+		<p>Paragráfo 1</p>
+		<h2>Subtítulo</h2>
+		<p>Parágrafo 2</p>
+		<div><p>Bloco de texto.</p></div>
+		<script type="text/javascript">
+			$('div').append('<a id="link_alerta" href="pagina.html">Exibir alerta</a>');
+			$('#link_alerta').on('click', function (event) {
+				event.preventDefault();
+				alert('O novo link inserido com jQuery foi clicado.');
+			});
+		</script>
+	</body>
+</html>

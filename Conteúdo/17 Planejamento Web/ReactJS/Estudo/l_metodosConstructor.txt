@@ -1,0 +1,36 @@
+// Trecho de código do método constructor
+constructor(props) {
+    super(props);
+    this.state = { nome: 'Daniel', idade: 12 };
+    this.atualizarUsuario = this.atualizarUsuario.bind(this);
+}
+
+atualizarUsuario() {
+    this.ContentVisibilityAutoStateChangeEvent(() => ({
+        nome: "Rodrigo",
+        idade: 20
+    }));
+}
+
+// Método aplicado quando o state possui dependência temporal de props:
+static getDerivedStateFromProps (props,state)
+
+// Método obrigatório em um componente do tipo classe, examina this.props e this.state retornando um elemento do 
+tipo React a ser carregado pelo componente:
+render()
+
+// Método chamado imediatamente após um componente ser montado, sendo chamado o método render() e ocorrendo a 
+renderização de fato do componente.
+componentDidMount()
+
+// Método que verifica se os valores atualizados do componente precisam ser novamente renderizados.
+shouldComponentUpdate(nextProps, nextState)
+
+// Executado antes de a árvore DOM ser renderizada.
+getSnapshotBeforeUpdate(prevProps, prevState)
+
+// Executado sempre que um estado do componente é atualizado logo após a chamada do componentDidMount()
+componentDidUpdate(prevProps, prevState, snapshot)
+
+// Executado antes de o componente ser destruído.
+componentWillUnmount()

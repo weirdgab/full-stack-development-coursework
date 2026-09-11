@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Inclusão e Remoção com Splice</title>
+	</head>
+	<body>
+		<script>
+			const vetor = [1, 2, 3, 4, 5, 6, 7];
+			console.log(vetor); // 1, 2, 3, 4, 5, 6, 7
+			vetor.splice(2, 3);
+			console.log(vetor); // 1, 2, 6, 7
+			vetor.splice(2, 0, 'X', 'X');
+			console.log(vetor); // 1, 2, X, X, 6, 7
+		</script>
+	</body>
+</html>

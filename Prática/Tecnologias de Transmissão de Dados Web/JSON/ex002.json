@@ -1,0 +1,43 @@
+{
+	"nota": {
+		"cabeçalho": {
+			"uf": "RJ",
+			"operacao": "pix",
+			"numero": 123456789,
+			"nota": 12345,
+			"data": "01-01-1999"
+		},
+		"emitente": {
+			"cnpj": 9817369183756,
+			"nome": "Gerson",
+			"nomeFantasia": "Mestre",
+			"incricaoEstadual": "RJ"
+		},
+		"destinatario": {
+			"cnpj": 9817369183756,
+			"nome": "Gerson",
+			"email": "email@dominio.com",
+			"endereco": [
+				{
+					"logradouro": 6,
+					"numero": 2,
+					"bairro": "comum",
+					"municipio": "JP",
+					"cep": "00000-000",
+					"pais": "Brasil",
+					"telefone": "(00) 9 0000-0000"
+				}
+			]
+		},
+		"item": {
+			"numero": "1",
+			"produto": "Arroz 5Kg",
+			"valor": 14.0,
+			"quantidade": 1
+		},
+		"rodape": {
+			"valorTotal": 14.0,
+			"icms": 0
+		}
+	}
+}

@@ -1,0 +1,7 @@
+   CREATE TABLE livros ( 
+       id SERIAL PRIMARY KEY, 
+       titulo VARCHAR(255), 
+       autor VARCHAR(255), 
+       ano_publicacao INTEGER, 
+       genero VARCHAR(100) 
+   );

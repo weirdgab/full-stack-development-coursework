@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculadora Simples</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body class="container">
+		<form class="form m-2">
+			<label class="form-label">Valor A</label>
+			<input class="form-control" type="number" id="v1" />
+			<label class="form-label">Valor B</label>
+			<input class="form-control" type="number" id="v2" />
+			<select class="form-select" id="oper">
+				<option>Soma</option>
+				<option>Subtração</option>
+				<option>Multiplicação</option>
+				<option>Divisão</option>
+				<option>Potência</option>
+			</select>
+			<a href="#" class="btn btn-primary m-2" onClick="executar()">Executar</a>
+		</form>
+		<div class="alert alert-success" id="resp">O resultado aparece aqui</div>
+		<script src="ex001_solucao.js"></script>
+		<script>
+			const executar = () => {
+				const a = eval(document.getElementById('v1').value);
+				const b = eval(document.getElementById('v2').value);
+				let oper = eval(document.getElementById('oper').selectedIndex);
+				let resultado =
+					oper == 0
+						? somar(a, b)
+						: oper == 1
+							? subtrair(a, b)
+							: oper == 2
+								? multiplicar(a, b)
+								: oper == 3
+									? dividir(a, b)
+									: exponencial(a, b);
+				document.getElementById('resp').innerHTML =
+					`O resultado da operação é ${resultado}`;
+			};
+		</script>
+	</body>
+</html>

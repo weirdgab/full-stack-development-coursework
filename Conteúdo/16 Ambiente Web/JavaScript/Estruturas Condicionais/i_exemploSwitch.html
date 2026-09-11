@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Exemplo com Switch</title>
+	</head>
+	<body>
+		<h2>JavaScript com switch</h2>
+		<p id="demo"></p>
+		<script>
+			let day;
+			switch (new Date().getDay()) {
+				case 0:
+					day = 'Domingo';
+					break;
+				case 1:
+					day = 'Segunda';
+					break;
+				case 2:
+					day = 'Terça';
+					break;
+				case 3:
+					day = 'Quarta';
+					break;
+				case 4:
+					day = 'Quinta';
+					break;
+				case 5:
+					day = 'Sexta';
+					break;
+				default:
+					day = 'Sábado';
+					break;
+			}
+			document.getElementById('demo').innerHTML = 'Hoje é ' + day;
+		</script>
+	</body>
+</html>

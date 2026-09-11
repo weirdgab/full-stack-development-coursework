@@ -1,0 +1,48 @@
+{
+	"NFe": {
+		"CABECALHO": {
+			"UF": "RJ",
+			"OPERACAO": "Venda prod. do estab.",
+			"SERIE": 1,
+			"NF": 992346,
+			"DTHREMISSAO": "2015-03-27T09:40:00-03:00"
+		},
+		"EMITENTE": {
+			"CNPJ": 822602000124,
+			"NOME": "Plotag Sistemas e Suprimentos Ltda",
+			"NOMEFANTASIA": "Plotag - Localhost",
+			"INCEST": 114489114119
+		},
+		"DESTINATARIO": {
+			"CNPJ": 99999999000191,
+			"NOME": "NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL",
+			"ENDERECO": {
+				"LOGRADOURO": "Rua Jaragua",
+				"NRO": 774,
+				"BAIRRO": "Bom Retiro",
+				"MUNICIPIO": "SAO PAULO",
+				"UF": "SP",
+				"CEP": 1129000,
+				"PAIS": "BRASIL",
+				"FONE": 33933501
+			},
+			"EMAIL": "email@yahoo.com.br"
+		},
+		"ITEM": [
+			{
+				"PRODUTO": "PAPEL MAXPLOT- 170MX250MX56GRS 3\"",
+				"VALOR": 138.3,
+				"QUANTIDADE": 1
+			},
+			{
+				"PRODUTO": "PAPEL MAX\"",
+				"VALOR": 13.8,
+				"QUANTIDADE": 1
+			}
+		],
+		"RODAPE": {
+			"VALORTOTAL": 0,
+			"ICMS": 0
+		}
+	}
+}

@@ -1,0 +1,18 @@
+lista = [1, 2, 3, 4, 5]
+
+
+def impares(iterable):
+    lista_aux = []
+    for item in terable:
+        if item % 2 != 0:
+            lista_aux.append(item)
+    return lista_aux
+
+
+def main():
+    nova_lista = impares(lista)
+    print(nova_lista)
+
+
+if __name__ == '__main__':
+    main()

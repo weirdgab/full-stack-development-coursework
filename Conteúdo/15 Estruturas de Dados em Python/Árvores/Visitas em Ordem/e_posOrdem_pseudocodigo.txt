@@ -1,0 +1,8 @@
+função pós-ordem(registro no * p)
+início
+    se (p -> dir != NULO)
+        pós-ordem(p -> dir);
+    se (p -> esq != NULO)
+        pós-ordem(p -> esq);
+    visita (p);
+fim

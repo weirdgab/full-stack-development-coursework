@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<notaFiscal>
+    <cabecalho>
+        <uf></uf>
+        <operacao></operacao>
+        <numeroSerie></numeroSerie>
+        <numeroNotaFiscal></numeroNotaFiscal>
+        <emissao></emissao>
+    </cabecalho>
+    <emitente>
+        <cnpj></cnpj>
+        <nome></nome>
+        <nomeFantasia></nomeFantasia>
+        <inscricao></inscricao>
+    </emitente>
+    <destinatario>
+        <cnpj></cnpj>
+        <nome></nome>
+        <email></email>
+        <endereco>
+            <logradouro></logradouro>
+            <numero></numero>
+            <bairro></bairro>
+            <municipio></municipio>
+            <uf></uf>
+            <cep></cep>
+            <pais></pais>
+            <telefone></telefone>
+        </endereco>
+    </destinatario>
+    <item numero="1">
+        <produto></produto>
+        <valor></valor>
+        <quantidade></quantidade>
+    </item>
+    <rodape>
+        <valorTotal></valorTotal>
+        <icms></icms>
+    </rodape>
+</notaFiscal>

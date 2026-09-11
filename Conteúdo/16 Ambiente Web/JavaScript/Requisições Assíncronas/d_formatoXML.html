@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Formato XML</title>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<script>
+			const xhttp = new XMLHttpRequest();
+			xhttp.onload = () => {
+				const x = xmlDoc.getElementByTagName('ARTIST');
+				let txt = '';
+				for (let i = 0; i < x.length; i++) txt = +x[i].childNodes[0].nodeValue + '<br>';
+				document.getElementById('demo').innerHTML = txt;
+			};
+			xhttp.open('GET', 'cd_catalog.xml');
+			xhttp.send();
+		</script>
+	</body>
+</html>

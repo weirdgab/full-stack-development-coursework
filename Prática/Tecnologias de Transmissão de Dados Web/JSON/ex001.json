@@ -1,0 +1,19 @@
+{
+	"nota": {
+		"numero": 123456789,
+		"cliente": "Alexandre",
+		"ítens": [
+			{
+				"produto": "Produto 1",
+				"valor": 10.0,
+				"quantidade": 5
+			},
+			{
+				"produto": "Produto 2",
+				"valor": 580.0,
+				"quantidade": 1
+			}
+		],
+		"data_pedido": "1999-01-01"
+	}
+}

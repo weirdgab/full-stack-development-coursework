@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Métodos get e post</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js">
+			//Sintaxe: $.get(URL, callback);
+			$.get("/url/recurso", function(data, status) {
+			    alert("Dados Retornados: " + data + "\nStatus: " + status);
+			});
+
+			//Sintaxe: $.post(URL, data, callback);
+			$.post("/url/recurso", {id: 1, order: "asc"}, function(data, status) {
+			    alert("Dados Retornados: " + data + "\nStatus: " + status);
+			});
+		</script>
+	</head>
+</html>

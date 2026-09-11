@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Awesome';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Awesome Font'),
+		url('/assets/fontes/awesome.woff2') format('woff2'),
+		url('//siteondeafonteestadisponivel/fonts/awesome.woff') format('woff'),
+		url('/assets/fontes/awesome.ttf') format('truetype'),
+		url('//outrositeondeafonteestadisponivel/fonts/awesome.eot') format('embedded-opentype');
+}
