@@ -6,7 +6,7 @@ function UsandoHookUseEffect() {
 	useEffect(() => {
 		document.title = `Você clicou ${contador} vezes`;
 		return () => (document.title = 'Componente desmontado');
-	}, []);
+	}, [contador]);
 
 	return (
 		<div>
