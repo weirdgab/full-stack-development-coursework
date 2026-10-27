@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import UsandoHookUseState from './Hooks/a_HookUseState';
-import Incrementar from './Hooks/b_IncrementandoVariavel';
-import UsandoHookUseEffect from './Hooks/d_HookUseEffect';
+import UsandoHookUseState from './Exemplos/UsandoHookUseState';
+import Incrementar from './Exemplos/IncrementandoVariavel';
+import UsandoHookUseEffect from './Exemplos/UsandoHookUseEffect';
 
 function App() {
 	const [visivel, setVisivel] = useState(true);
