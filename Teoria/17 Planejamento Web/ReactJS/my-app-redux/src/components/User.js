@@ -1,14 +1,15 @@
-import { useSelector } from 'react-redux';
-import { selectUser } from '../redux/userSlice';
+import React from "react";
+import { useSelector } from "react-redux";
+import { selectUser } from "../redux/userSlice";
 
-function User() {
-  const user = useSelector(selectUser);
+const User = () => {
+    const { name } = useSelector(selectUser);
 
-  if (!user.isLogged) {
-    return <p>Nenhum usuário logado</p>;
-  }
-
-  return <p>Usuário logado: {user.name}</p>;
+    return (
+        <>
+            <strong><h1>Usuário: {name}</h1></strong>
+        </>
+    )
 }
 
-export default User;
+export default User; 

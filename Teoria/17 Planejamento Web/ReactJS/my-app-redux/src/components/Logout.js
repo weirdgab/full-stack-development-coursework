@@ -1,10 +1,26 @@
-import { useDispatch } from 'react-redux';
-import { logout } from '../redux/userSlice';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { logout } from "../redux/userSlice";
 
-function Logout() {
-  const dispatch = useDispatch();
+const Logout = () => {
+    const [name, setName] = useState("");
+    const dispatch = useDispatch();
 
-  return <button onClick={() => dispatch(logout())}>Logout</button>;
+    const handleLogout = () => {
+        dispatch(logout(name));
+    }
+
+    return (
+        <>
+        <form>
+            <strong><h1>Logout</h1></strong>
+            <p>
+                <button type="button" onClick={handleLogout}>Logout</button>
+            </p>
+            <hr />
+        </form>
+        </>
+    );
 }
 
-export default Logout;
+export default Logout; 

@@ -1,22 +1,27 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { changeUser } from '../redux/userSlice';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { changeUser } from "../redux/userSlice";
 
-function Login() {
-  const [nome, setNome] = useState('');
-  const dispatch = useDispatch();
+const Login = () => {
+    const [name, setName] = useState("");
+    const dispatch = useDispatch();
 
-  return (
-    <div>
-      <input
-        type="text"
-        placeholder="Digite seu nome"
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-      />
-      <button onClick={() => dispatch(changeUser(nome))}>Login</button>
-    </div>
-  );
+    const handleLogin = () => {
+        dispatch(changeUser(name));
+    }
+
+    return (
+        <>
+        <form>
+            <strong><h1>Login</h1></strong>
+            <p>
+                <input type="text" placeholder="Nome" onChange={(e) => setName(e.target.value)}></input>
+                <button type="button" onClick={handleLogin}>Login</button>
+            </p>
+            <hr />
+        </form>
+        </>
+    );
 }
 
 export default Login;
